@@ -6,15 +6,18 @@ public class areas {
         return "Kreis - Radius \n Quadrat - Seite \n Rechteck - Länge/Breite";
     }
 
-    public double getArea(String form, double value){
+    private double area;
+    private String form;
+
+    public void setArea(String form, double value){
         if(form.equals("Kreis")){
-            return value*value*Math.PI;
+            this.area = value*value*Math.PI;
         }
-        else return value*value;
+        else this.area = value*value;
     }
 
-    public double getArea(String form, double val1, double val2){
-        return val1*val2;
-    }
+    public void setArea(String form, double val1, double val2){
+        this.area = val1*val2;
+            }
 
 }
