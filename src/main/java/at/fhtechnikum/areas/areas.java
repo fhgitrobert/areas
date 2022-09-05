@@ -20,4 +20,11 @@ public class areas {
         this.area = val1*val2;
             }
 
+    public double getArea(){
+        return this.area;
+    }
+
+    public String getForm(){
+        return this.form;
+    }
 }
