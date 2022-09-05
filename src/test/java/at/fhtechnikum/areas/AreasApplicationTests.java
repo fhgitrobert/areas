@@ -14,7 +14,7 @@ class AreasApplicationTests {
         //act
         test.setArea("Rechteck", 3, 4.5);
         //assert
-        Assertions.assertEquals(test.);
+        Assertions.assertEquals(13.5, test.getArea());
     }
 
 }
